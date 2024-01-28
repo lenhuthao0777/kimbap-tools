@@ -1,0 +1,14 @@
+{
+  "extends": "@typescript-config-custom/react-library.json",
+  "compilerOptions": {
+    "outDir": "dist"
+  },
+  "include": [
+    "src",
+    "stories",
+    "__tests__/*.tsx",
+    "index.ts",
+    "__tests__/util.test.ts"
+  ],
+  "exclude": ["dist", "node_modules"]
+}

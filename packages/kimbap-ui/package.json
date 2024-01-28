@@ -1,0 +1,45 @@
+{
+  "name": "@kimbap-ui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsup src --dts",
+    "build:fast": "tsup src",
+    "dev": "pnpm build:fast --watch",
+    "lint": "eslint src/ --cache",
+    "clean": "rimraf dist .turbo",
+    "typecheck": "tsc --noEmit",
+    "prepack": "clean-package",
+    "postpack": "clean-package restore"
+  },
+  "devDependencies": {
+    "@eslint-config-custom": "workspace:*",
+    "@storybook/cli": "^7.6.10",
+    "@tailwindcss/forms": "^0.5.7",
+    "@typescript-config-custom": "workspace:*",
+    "autoprefixer": "^10.4.17",
+    "class-variance-authority": "^0.7.0",
+    "clean-package": "^2.2.0",
+    "clsx": "^2.1.0",
+    "postcss": "^8.4.33",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.2.1",
+    "tailwindcss": "^3.4.1",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "keywords": [],
+  "author": "Johnny.dev",
+  "license": "ISC",
+  "dependencies": {
+    "@radix-ui/themes": "^2.0.3"
+  }
+}
