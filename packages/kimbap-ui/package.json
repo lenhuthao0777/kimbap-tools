@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsup src --dts",
     "build:fast": "tsup src",
-    "dev": "pnpm build:fast --watch",
+    "dev": "pnpm build --watch",
     "lint": "eslint src/ --cache",
     "clean": "rimraf dist .turbo",
     "typecheck": "tsc --noEmit",

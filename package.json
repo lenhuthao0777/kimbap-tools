@@ -1,11 +1,21 @@
 {
   "name": "kimbap-tools",
-  "private": true,
+  "private": false,
+  "description": "Beautiful and accessible React UI library for building web3 applications",
+  "license": "ISC",
+  "publishConfig": {
+    "access": "public"
+  },
+  "author": "Johnny.dev",
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "turbo:clean": "turbo clean && rimraf ./node_modules/.cache/turbo ./packages/**/.turbo ./packages/**/**/.turbo ./apps/**/**/.turbo",
+    "clean:node-modules": "rimraf ./apps/**/node_modules ./packages/**/node_modules ./packages/**/**/node_modules ./node_modules",
+    "clean:dist": "rimraf ./packages/**/**/dist ./packages/**/dist ./apps/**/.next ./packages/**/storybook-static",
+    "clean:lock": "rm ./pnpm-lock.yaml"
   },
   "devDependencies": {
     "@eslint-config-custom": "workspace:*",
