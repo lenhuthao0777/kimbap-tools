@@ -1,4 +1,4 @@
-import { Button } from '@kimbap-ui';
+import { Button } from '@kimbap-tools/ui';
 
 const Test = () => {
   return (

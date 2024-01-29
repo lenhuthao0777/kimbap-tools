@@ -9,7 +9,7 @@ the development of cutting-edge web interfaces.
 ## Documentation
 
 - For contribution details, see our
-- Explore our [UI Documentation](https://kimbap.ui.com/) for design system
+- Explore our [UI Documentation](https://github.com/lenhuthao0777/kimbap-tools) for design system
   insights.
 
 ## Community

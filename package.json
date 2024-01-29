@@ -18,7 +18,7 @@
     "clean:lock": "rm ./pnpm-lock.yaml"
   },
   "devDependencies": {
-    "@eslint-config-custom": "workspace:*",
+    "eslint-config-custom": "workspace:*",
     "@typescript-config-custom": "workspace:*",
     "eslint": "^8.56.0",
     "prettier": "^3.1.1",

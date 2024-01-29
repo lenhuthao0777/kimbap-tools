@@ -14,8 +14,8 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@eslint-config-custom": "workspace:*",
-    "@kimbap-ui": "workspace:*",
+    "eslint-config-custom": "workspace:*",
+    "@kimbap-tools/ui": "workspace:*",
     "@next/eslint-plugin-next": "^14.0.4",
     "@types/eslint": "^8.56.1",
     "@types/node": "^20.10.6",
